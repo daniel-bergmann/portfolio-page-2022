@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,700;1,300;1,400;1,600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Source Serif Pro", serif;
+}
+
+*::selection {
+  background-color: gold;
+  color: blue;
+}
+
+/* fade in animation */
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* utilities */
+
+body {
+  margin: 4.5rem 1.5rem;
+  color: #39464f;
+}
+
+h1 {
+  font-size: calc(32px + 32 * (100vw - 375px) / 993);
+  padding: 10px 0;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  width: 100%;
+  padding: 0.2rem;
+}
+
+img {
+  height: 100px;
+  width: 200px;
+}
+
+/* Selectors */
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title-logo {
+  height: 50px;
+  width: auto;
+  padding: 0 10px;
+  animation: rotation 8s infinite linear;
+}
+.title-logo:hover {
+  animation: rotation 1s infinite linear;
+  cursor: pointer;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* the yellow hover effect */
+.link {
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+  background-position-y: -0%;
+  background-image: linear-gradient(white 50%, gold 50%);
+  transition: background 500ms ease;
+  background-size: 2px;
+  background-size: auto 175%;
+}
+a:hover {
+  background-position-y: 100%;
+}
+
+.container {
+  margin: 40px 0;
+}
+
+/* from the react-icons library */
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  color: #333;
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.icon:hover {
+  color: gold;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  body {
+    margin: 4.5rem 4.5rem;
+  }
+  p {
+    width: 65%;
+  }
+  .icon-container {
+    justify-content: flex-start;
+  }
+  .portfolio-p {
+    max-width: 500px;
+  }
+}
