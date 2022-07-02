@@ -42,20 +42,6 @@ const portfolioData = [
     github: "https://github.com/daniel-bergmann/pingis",
   },
   {
-    img: nyt,
-    text: "This website is a web-scraping project to test out this powerful technology. The data on this webpage has been scraped from www.nytimes.com just for fun and demonstration of my web development skills. I used Cheerio, Axios and Next.js which provided me the ability to serve static html pages with server side rendering.",
-    link: "https://new-york-times-web-scraper.vercel.app/",
-    alt: "logo of the nyt web scraper test site",
-    github: "https://github.com/daniel-bergmann/new-york-times-web-scraper",
-  },
-  {
-    img: teamhealth,
-    text: " At Reon, one of Iceland's leading software companies. I was a part of a fantastic team of developers working on a dashboard for the Team Health app. We used Figma to design the UI and the React framework Next.js for the frontend development. The backend API was written in Django by two brilliant developers at the company. The native mobile app was written in Flutter and I also had the chance to debug some errors using my limited but improving Flutter skills.",
-    link: "https://teamhealth.is/",
-    alt: "logo of teamhealth",
-    github: "https://github.com/daniel-bergmann",
-  },
-  {
     img: konni,
     text: "The Northern Lights Confucius Institute official website. I designed the site with Figma, developed it with Gatsby JS and GraphQL, and connected it to Prismic CMS for content management. The logo and design system of the site was also created by me. It is fully responsive and functional on all devices.",
     link: "https://konfusius.is/",
@@ -68,5 +54,19 @@ const portfolioData = [
     link: "https://kinverska.is/",
     alt: "logo of kinverska.is",
     github: "https://github.com/daniel-bergmann/kinverska.is",
+  },
+  {
+    img: teamhealth,
+    text: " At Reon, one of Iceland's leading software companies. I was a part of a fantastic team of developers working on a dashboard for the Team Health app. We used Figma to design the UI and the React framework Next.js for the frontend development. The backend API was written in Django by two brilliant developers at the company. The native mobile app was written in Flutter and I also had the chance to debug some errors using my limited but improving Flutter skills.",
+    link: "https://teamhealth.is/",
+    alt: "logo of teamhealth",
+    github: "https://github.com/daniel-bergmann",
+  },
+  {
+    img: nyt,
+    text: "This website is a web-scraping project to test out this powerful technology. The data on this webpage has been scraped from www.nytimes.com just for fun and demonstration of my web development skills. I used Cheerio, Axios and Next.js which provided me the ability to serve static html pages with server side rendering.",
+    link: "https://new-york-times-web-scraper.vercel.app/",
+    alt: "logo of the nyt web scraper test site",
+    github: "https://github.com/daniel-bergmann/new-york-times-web-scraper",
   },
 ];
