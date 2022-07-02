@@ -36,8 +36,8 @@ export function threeJsLogic() {
 
   const animate = () => {
     // rotating the cube
-    mesh.rotation.x += 0.001;
-    mesh.rotation.y += 0.001;
+    mesh.rotation.x += 0.0003;
+    mesh.rotation.y += 0.00033;
 
     renderer.render(scene, camera);
     window.requestAnimationFrame(animate);
