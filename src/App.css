@@ -49,6 +49,7 @@ main {
 body {
   margin: 4.5rem 1.5rem;
   color: #39464f;
+  overflow-x: hidden;
 }
 
 h1 {
